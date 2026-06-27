@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -14,8 +15,8 @@ a {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  width: $card-width;
-  height: $card-height;
+  width: $card-width - 2px;
+  height: $card-height - 2px;
   transition:
     transform 300ms,
     border-color 300ms;
@@ -63,7 +64,7 @@ a {
     margin-left: auto;
     align-items: center;
     justify-content: flex-end;
-    color: #060b35;
+    color: $text-main;
   }
 
   &__prices {
@@ -123,7 +124,7 @@ a {
     z-index: 1;
 
     .card__title {
-      color: #34568b;
+      color: $hover-color;
     }
   }
 }
