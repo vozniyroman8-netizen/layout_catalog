@@ -44,7 +44,7 @@
       transition: color 300ms;
 
       &.is-active {
-        color: #00acdc;
+        color: $accent;
 
         &::after {
           content: '';
